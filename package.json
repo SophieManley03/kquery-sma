@@ -1,0 +1,28 @@
+{
+  "name": "kquerysma",
+  "version": "0.0.1",
+  "main": "lib/kQuery.cjs.js",
+  "module": "lib/kQuery.esm.js",
+  "browser": "lib/kQuery.umd.js",
+  "scripts": {
+    "build": "npm run format && npm run lint && rollup -c",
+    "dev": "rollup -c -w",
+    "format": "prettier --write ./src/*.js",
+    "lint": "eslint ./src/*.js",
+    "test": "jest"
+  },
+  "author": "Sophie M.",
+  "devDependencies": {
+    "babel-preset-env": "^1.6.0",
+    "eslint": "^5.4.0",
+    "jest": "^23.5.0",
+    "prettier": "1.14.2",
+    "rollup": "0.64.1",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-node-resolve": "^3.0.0"
+  },
+  "files": [
+    "lib"
+  ]
+}
