@@ -13,12 +13,20 @@ class kCollection {
 
   find(cssSelectorString) {
     let t = [];
-    this.values.map(_ => {
-      const obj = [].slice.call(_.querySelectorAll(cssSelectorString));
+    this.values.map(element => {
+      const obj = [].slice.call(element.querySelectorAll(cssSelectorString));
       t = t.concat(obj);
     });
 
     return new kCollection(t);
+  }
+
+  append(HTMLString) {
+    this.values.forEach(v => {
+      v.insertAdjacentHTML("beforeend", HTMLString);
+    });
+
+    return new kCollection(this.values);
   }
 
   style(inlineStyle) {

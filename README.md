@@ -11,10 +11,13 @@ Designing an API like jQuery. Starting by implementing a few basics:
 * kCollection.find(cssSelectorString)
 * kCollection.get()
 
+I choose to add:
+* append(HTMLString) *(Add an item just before the selecting closing tag)*
+
 Oh, I almost forgot: we need kQuery within a week ;)
 
 
-## Techno used
+## Techno
 I needed to find an efficient build tools for library so I asked for advice to a friend. He told me about rollup.
 That's how I found the **skeleton** of kQuery: 
 [rollup-starter-lib] (https://github.com/rollup/rollup-starter-lib) 🙏 
@@ -44,6 +47,7 @@ Before publishing on npm or pushing on github, you will have to run: `npm run bu
 
 
 ## Improvment
-Create an example to try it on web
-Implement other functionalities
+Create an example to try it on web.
+
+Implement other functionalities.
 
