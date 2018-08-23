@@ -1,6 +1,6 @@
 {
   "name": "kquerysma",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "lib/kQuery.cjs.js",
   "module": "lib/kQuery.esm.js",
   "browser": "lib/kQuery.umd.js",

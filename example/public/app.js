@@ -20221,9 +20221,7 @@ var Ex1 = /** @class */ (function (_super) {
     Ex1.prototype.clear = function () {
         // TODO: create a methods for that in kQuery
         if (document.getElementById('example1') && kQuery('.item').get().length === 0) {
-            document
-                .getElementById('example1')
-                .insertAdjacentHTML('afterbegin', '<div class="item">Some</div>' + '<div class="item">Item</div>');
+            kQuery('#example1').append('<div class="item">Some</div>' + '<div class="item">Item</div>', 'afterbegin');
             kQuery('.itemReplacement').style({ color: 'black' });
         }
     };

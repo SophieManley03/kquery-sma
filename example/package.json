@@ -1,7 +1,7 @@
 {
   "name": "life",
   "version": "0.0.1",
-  "description": "JExaple for KQuery",
+  "description": "Example for KQuery",
   "main": "index.js",
   "scripts": {
     "precommit": "pretty-quick --staged",
@@ -10,8 +10,8 @@
     "watch": "node_modules/webpack/bin/webpack.js --watch --config build/watch.js --mode=development",
     "format": "prettier --write '**/**/**/*.{js,ts,tsx}'"
   },
-  "author": "",
-  "license": "---",
+  "author": "Sophie M.",
+  "license": "ISC",
   "devDependencies": {
     "@types/react": "16.3.14",
     "@types/react-dom": "16.0.4",
@@ -27,7 +27,7 @@
     "csx": "^9.0.0",
     "fork-ts-checker-webpack-plugin": "0.4.1",
     "husky": "^1.0.0-rc.13",
-    "kquerysma": "0.0.4",
+    "kquerysma": "0.0.5",
     "prettier": "1.14.2",
     "source-map-loader": "0.2.3",
     "typescript": "3.0",

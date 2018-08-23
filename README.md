@@ -48,6 +48,6 @@ Before publishing on npm or pushing on github, you will have to run: `npm run bu
 
 ## Improvment
 Create an example to try it on web.
-
+Add types for kCollection function
 Implement other functionalities.
 

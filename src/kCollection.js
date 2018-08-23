@@ -21,9 +21,13 @@ class kCollection {
     return new kCollection(t);
   }
 
-  append(HTMLString) {
+  /*
+  * option: 'beforeBegin'|'afterBegin'|'beforeEnd'|'afterEnd'
+  * Need a secure control
+  */
+  append(HTMLString, option) {
     this.values.forEach(v => {
-      v.insertAdjacentHTML("beforeend", HTMLString);
+      v.insertAdjacentHTML(option ? option : "beforeend", HTMLString);
     });
 
     return new kCollection(this.values);
