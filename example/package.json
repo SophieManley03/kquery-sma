@@ -1,0 +1,51 @@
+{
+  "name": "life",
+  "version": "0.0.1",
+  "description": "JExaple for KQuery",
+  "main": "index.js",
+  "scripts": {
+    "precommit": "pretty-quick --staged",
+    "start": "node_modules/webpack-dev-server/bin/webpack-dev-server.js --progress --colors",
+    "build": "webpack --mode production",
+    "watch": "node_modules/webpack/bin/webpack.js --watch --config build/watch.js --mode=development",
+    "format": "prettier --write '**/**/**/*.{js,ts,tsx}'"
+  },
+  "author": "",
+  "license": "---",
+  "devDependencies": {
+    "@types/react": "16.3.14",
+    "@types/react-dom": "16.0.4",
+    "@types/react-redux": "5.0.15",
+    "awesome-typescript-loader": "5.0.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "1.7.0",
+    "babel-preset-react": "6.24.1",
+    "browser-sync": "^2.24.6",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "css-loader": "^0.28.11",
+    "csx": "^9.0.0",
+    "fork-ts-checker-webpack-plugin": "0.4.1",
+    "husky": "^1.0.0-rc.13",
+    "kquerysma": "0.0.4",
+    "prettier": "1.14.2",
+    "source-map-loader": "0.2.3",
+    "typescript": "3.0",
+    "typestyle": "2.0.1",
+    "webpack": "4.8.3",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "3.1.4"
+  },
+  "dependencies": {
+    "local-web-server": "2.5.2",
+    "pretty-quick": "^1.6.0",
+    "react": "16.2.0",
+    "react-dom": "16.2.0",
+    "react-redux": "5.0.7",
+    "redux": "3.7.2",
+    "ts-loader": "4.0.0",
+    "tslint": "5.10.0",
+    "tslint-immutable": "4.5.4",
+    "tslint-loader": "3.6.0"
+  }
+}
