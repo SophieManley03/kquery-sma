@@ -1,7 +1,8 @@
 .DS_Store
 node_modules
 package-lock.json
-*.html
+index.html
 example/.DS_Store
 example/node_modules
+example/public/
 example/package-lock.json

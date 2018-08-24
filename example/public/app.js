@@ -2357,11 +2357,17 @@ exports.create = create;
 
         return new kCollection(t);
       }
+
+      /*
+      * option: 'beforeBegin'|'afterBegin'|'beforeEnd'|'afterEnd'
+      * Need a secure control
+      */
+
     }, {
       key: "append",
-      value: function append(HTMLString) {
+      value: function append(HTMLString, option) {
         this.values.forEach(function (v) {
-          v.insertAdjacentHTML("beforeend", HTMLString);
+          v.insertAdjacentHTML(option ? option : "beforeend", HTMLString);
         });
 
         return new kCollection(this.values);

@@ -12,10 +12,7 @@
     "allowSyntheticDefaultImports": false,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "baseUrl": "./",
-    "paths": {
-      "~/*": [ "./src/*" ]
-    },
+    "baseUrl": "./"
   },
   "include": [
     "typings/*.d.ts",

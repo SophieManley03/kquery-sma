@@ -6,7 +6,6 @@
   "scripts": {
     "precommit": "pretty-quick --staged",
     "start": "node_modules/webpack-dev-server/bin/webpack-dev-server.js --progress --colors",
-    "build": "webpack --mode production",
     "watch": "node_modules/webpack/bin/webpack.js --watch --config build/watch.js --mode=development",
     "format": "prettier --write '**/**/**/*.{js,ts,tsx}'"
   },
