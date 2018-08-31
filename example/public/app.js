@@ -20225,8 +20225,7 @@ var Ex1 = /** @class */ (function (_super) {
             .style({ color: 'red' });
     };
     Ex1.prototype.clear = function () {
-        // TODO: create a methods for that in kQuery
-        if (document.getElementById('example1') && kQuery('.item').get().length === 0) {
+        if (kQuery('.item').get().length === 0) {
             kQuery('#example1').append('<div class="item">Some</div>' + '<div class="item">Item</div>', 'afterbegin');
             kQuery('.itemReplacement').style({ color: 'black' });
         }
@@ -20374,8 +20373,8 @@ var Ex3 = /** @class */ (function (_super) {
         var _this = this;
         return (React.createElement("div", { className: style_1.default.example },
             React.createElement("div", { id: "example3" },
-                React.createElement("span", { className: "itemReplacement" }, "Hello"),
-                React.createElement("span", { className: "itemReplacement" }, "World!"),
+                React.createElement("span", null, "Hello"),
+                React.createElement("span", null, "World!"),
                 React.createElement("div", { className: "remove" }, "I will disappear")),
             React.createElement("div", { className: style_1.default.action },
                 React.createElement("div", { className: style_1.default.instruction }, "kQuery('.remove') .remove()"),

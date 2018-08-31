@@ -10,8 +10,7 @@ export default class Ex1 extends React.Component {
   }
 
   clear(): void {
-    // TODO: create a methods for that in kQuery
-    if (document.getElementById('example1') && kQuery('.item').get().length === 0) {
+    if (kQuery('.item').get().length === 0) {
       kQuery('#example1').append('<div class="item">Some</div>' + '<div class="item">Item</div>', 'afterbegin')
       kQuery('.itemReplacement').style({ color: 'black' })
     }

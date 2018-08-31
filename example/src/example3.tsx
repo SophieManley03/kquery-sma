@@ -17,8 +17,8 @@ export default class Ex3 extends React.Component {
     return (
       <div className={style.example}>
         <div id="example3">
-          <span className="itemReplacement">Hello</span>
-          <span className="itemReplacement">World!</span>
+          <span>Hello</span>
+          <span>World!</span>
           <div className="remove">I will disappear</div>
         </div>
 
